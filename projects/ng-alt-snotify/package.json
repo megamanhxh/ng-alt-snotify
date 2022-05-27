@@ -1,7 +1,7 @@
 {
   "name": "ng-alt-snotify",
   "description": "Angular 2+ alternative notifications center",
-  "version": "13.0.2",
+  "version": "13.0.3",
   "homepage": "https://megamanhxh.github.io/ng-alt-snotify",
   "repository": {
     "type": "git",
@@ -11,6 +11,12 @@
     "name": "artemsky",
     "email": "mr.artemsky@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "MegamanHxH",
+      "email": "megamanhxh@gmail.com"
+    }
+  ],
   "keywords": [
     "angular",
     "angular 2",

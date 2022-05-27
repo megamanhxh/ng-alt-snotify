@@ -1,6 +1,6 @@
 {
   "name": "ng-alt-snotify-example",
-  "version": "13.0.2",
+  "version": "13.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve ng-alt-snotify-example",
@@ -159,7 +159,7 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "bootstrap": "^5.1.3",
-    "ng-alt-snotify": "^13.0.2",
+    "ng-alt-snotify": "^13.0.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
