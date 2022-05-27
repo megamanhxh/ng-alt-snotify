@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SnotifyPosition, SnotifyService, SnotifyToastConfig } from "ng-alt-snotify";
-import { Observable } from "rxjs";
+import { SnotifyPosition, SnotifyService, SnotifyToastConfig } from 'ng-alt-snotify';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',

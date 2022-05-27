@@ -92,6 +92,19 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.scss"],
             "scripts": []
+          },
+          "configurations": {
+            "ci": {
+              "watch": false,
+              "progress": false,
+              "browsers": "ChromeHeadlessCI"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         }
       }
@@ -123,6 +136,19 @@
             "main": "projects/ng-alt-snotify/src/test.ts",
             "tsConfig": "projects/ng-alt-snotify/tsconfig.spec.json",
             "karmaConfig": "projects/ng-alt-snotify/karma.conf.js"
+          },
+          "configurations": {
+            "ci": {
+              "watch": false,
+              "progress": false,
+              "browsers": "ChromeHeadlessCI"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/ng-alt-snotify/**/*.ts", "projects/ng-alt-snotify/**/*.html"]
           }
         }
       }

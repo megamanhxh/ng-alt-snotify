@@ -22,6 +22,7 @@ export class PromptComponent {
   isPromptFocused = false;
 
   handleInput($event: Event) {
-    this.toast.value = ($event.target as HTMLInputElement).value; this.toast.eventEmitter.next('input')
+    this.toast.value = ($event.target as HTMLInputElement).value;
+    this.toast.eventEmitter.next('input');
   }
 }
