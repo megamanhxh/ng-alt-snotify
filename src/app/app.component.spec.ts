@@ -1,7 +1,7 @@
 import { FormsModule } from '@angular/forms';
 import { ComponentFixture, async, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { SnotifyModule, SnotifyPosition, SnotifyService, ToastDefaults } from 'ng-snotify';
+import { SnotifyModule, SnotifyPosition, SnotifyService, ToastDefaults } from 'ng-alt-snotify';
 
 describe('NgSnotify Testing', () => {
   let component: AppComponent;

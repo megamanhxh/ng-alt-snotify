@@ -1,11 +1,11 @@
 {
-  "name": "ng-snotify",
-  "description": "Angular 2+ notifications center",
-  "version": "9.0.2",
-  "homepage": "https://artemsky.github.io/ng-snotify",
+  "name": "ng-alt-snotify",
+  "description": "Angular 2+ alternative notifications center",
+  "version": "13.0.2",
+  "homepage": "https://megamanhxh.github.io/ng-alt-snotify",
   "repository": {
     "type": "git",
-    "url": "https://github.com/artemsky/ng-snotify"
+    "url": "https://github.com/megamanhxh/ng-alt-snotify"
   },
   "author": {
     "name": "artemsky",
@@ -20,6 +20,10 @@
     "angular 7",
     "angular 8",
     "angular 9",
+    "angular 10",
+    "angular 11",
+    "angular 12",
+    "angular 13",
     "ng",
     "ng2",
     "ng4",
@@ -28,6 +32,10 @@
     "ng7",
     "ng8",
     "ng9",
+    "ng10",
+    "ng11",
+    "ng12",
+    "ng13",
     "Angular2",
     "Angular4",
     "Angular5",
@@ -35,6 +43,10 @@
     "Angular7",
     "Angular8",
     "Angular9",
+    "Angular10",
+    "Angular11",
+    "Angular12",
+    "Angular13",
     "2",
     "4",
     "5",
@@ -42,6 +54,10 @@
     "7",
     "8",
     "9",
+    "10",
+    "11",
+    "12",
+    "13",
     "Library",
     "Notifications",
     "Notification",
@@ -62,6 +78,10 @@
     "ng7-snotify",
     "ng8-snotify",
     "ng9-snotify",
+    "ng10-snotify",
+    "ng11-snotify",
+    "ng12-snotify",
+    "ng13-snotify",
     "angular2 notifications",
     "angular4 notifications",
     "angular5 notifications",
@@ -69,15 +89,21 @@
     "angular7 notifications",
     "angular8 notifications",
     "angular9 notifications",
+    "angular10 notifications",
+    "angular11 notifications",
+    "angular12 notifications",
+    "angular13 notifications",
     "toaster"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://artemsky.github.io/ng-snotify/issues"
+    "url": "https://github.com/megamanhxh/ng-alt-snotify/issues"
   },
   "peerDependencies": {
-    "@angular/core": "^9.0.0",
-    "rxjs": "^6.5.4",
-    "zone.js": "^0.10.2"
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
   }
 }

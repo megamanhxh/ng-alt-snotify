@@ -3,11 +3,14 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-snotify-example": {
+    "ng-alt-snotify-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
         }
       },
       "root": "",
@@ -17,32 +20,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-snotify-example",
+            "outputPath": "dist/ng-alt-snotify-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -54,25 +43,42 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "ng-snotify-example:build"
-          },
           "configurations": {
             "production": {
-              "browserTarget": "ng-snotify-example:build:production"
+              "browserTarget": "ng-alt-snotify-example:build:production"
+            },
+            "development": {
+              "browserTarget": "ng-alt-snotify-example:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-snotify-example:build"
+            "browserTarget": "ng-alt-snotify-example:build"
           }
         },
         "test": {
@@ -82,88 +88,45 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.scss"],
             "scripts": []
-          },
-          "configurations": {
-            "ci": {
-              "watch": false,
-              "progress": false,
-              "browsers": "ChromeHeadlessCI"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json", "e2e/tsconfig.json"],
-            "exclude": ["**/node_modules/**"]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng-snotify-example:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ng-snotify-example:serve:production"
-            },
-            "ci": {
-              "devServerTarget": "ng-snotify-example:serve:production",
-              "protractorConfig": "e2e/protractor-ci.conf.js"
-            }
           }
         }
       }
     },
-    "ng-snotify": {
+    "ng-alt-snotify": {
       "projectType": "library",
-      "root": "projects/ng-snotify",
-      "sourceRoot": "projects/ng-snotify/src",
-      "prefix": "",
+      "root": "projects/ng-alt-snotify",
+      "sourceRoot": "projects/ng-alt-snotify/src",
+      "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ng-snotify/tsconfig.lib.json",
-            "project": "projects/ng-snotify/ng-package.json"
+            "project": "projects/ng-alt-snotify/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-snotify/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-alt-snotify/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-alt-snotify/tsconfig.lib.json"
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-snotify/src/test.ts",
-            "tsConfig": "projects/ng-snotify/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-snotify/karma.conf.js"
-          },
-          "configurations": {
-            "ci": {
-              "watch": false,
-              "progress": false,
-              "browsers": "ChromeHeadlessCI"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["projects/ng-snotify/tsconfig.lib.json", "projects/ng-snotify/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "main": "projects/ng-alt-snotify/src/test.ts",
+            "tsConfig": "projects/ng-alt-snotify/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-alt-snotify/karma.conf.js"
           }
         }
       }
     }
   },
-  "defaultProject": "ng-snotify-example",
-  "cli": {
-    "analytics": false
-  }
+  "defaultProject": "ng-alt-snotify-example"
 }

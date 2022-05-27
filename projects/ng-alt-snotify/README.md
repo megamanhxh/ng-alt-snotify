@@ -6,7 +6,7 @@
 [![Dev dependencies status list](https://david-dm.org/artemsky/ng-snotify/dev-status.svg)](https://david-dm.org/artemsky/ng-snotify?type=dev)
 
 # Disclaimer
-_This is a fork version of [ng-snotify](https://github.com/artemsky/ng-snotify) by [Artem Kuznetsov](https://github.com/artemsky) just to 
+_This is a fork version of [ng-snotify](https://github.com/artemsky/ng-snotify) by [Artem Kuznetsov](https://github.com/artemsky) just to
 allow to bump the version up to support the latest version of angular until the returns happens. Do not afflict this version as the official
 version._
 

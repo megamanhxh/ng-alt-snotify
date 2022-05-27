@@ -1,6 +1,16 @@
 ## Change Log
 
 
+### v13.0.2
+- fix missing style
+
+### v13.0.1
+
+### v13.0.0
+- initial fork to ng-alt-snotify
+- update to Angular ^13.0.0
+- bump package name to match angular version
+
 ### v9.0.2
 - fix position in toast config
 
