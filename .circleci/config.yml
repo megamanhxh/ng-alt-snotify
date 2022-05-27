@@ -1,0 +1,36 @@
+# This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+version: 2.1
+
+# Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+# See: https://circleci.com/docs/2.0/orb-intro/
+orbs:
+  node: circleci/node@5.0.2
+
+jobs:
+  test:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+          command: npm run prettier:check
+          name: Running npm test prettier
+      - run:
+          command: npm run lint
+          name: Running npm test lint
+      - run:
+          command: npm run test:ci
+          name: Running npm test test:ci
+      - run:
+          command: npm run lib:build:prod
+          name: Running npm test lib:build:prod
+      - run:
+          command: npm run example:build:prod
+          name: Running npm test example:build:prod
+      - run:
+          command: npm run compodoc:build
+          name: Running npm test compodoc:build
+workflows:
+  test_ng_alt_snotify:
+    jobs:
+      - test
