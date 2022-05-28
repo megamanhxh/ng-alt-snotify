@@ -1,5 +1,6 @@
 # ng-alt-snotify
 
+[![Build Status](https://circleci.com/gh/megamanhxh/ng-alt-snotify/tree/master.svg?style=svg)](https://app.circleci.com/pipelines/github/megamanhxh/ng-alt-snotify)
 [![Build Status](https://travis-ci.org/artemsky/ng-snotify.svg?branch=master)](https://travis-ci.org/artemsky/ng-snotify)
 [![NPM Version](https://img.shields.io/npm/v/ng-alt-snotify.svg)](https://www.npmjs.com/package/ng-alt-snotify)
 [![NPM Downloads](https://img.shields.io/npm/dt/ng-alt-snotify.svg)](https://www.npmjs.com/package/ng-alt-snotify)
