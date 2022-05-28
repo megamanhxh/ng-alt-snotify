@@ -30,6 +30,10 @@ jobs:
     description: Install puppeteer and headless chrome
     steps:
     - run:
+        name: Updated Linux Repos
+        command: |
+          sudo apt-get update
+    - run:
         name: Install Headless Chrome dependencies
         command: |
           sudo apt-get install -yq \
