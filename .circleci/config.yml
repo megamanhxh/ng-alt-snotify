@@ -50,4 +50,7 @@ jobs:
 workflows:
   test_ng_alt_snotify:
     jobs:
-      - test
+      - test:
+          filters:
+            tags:
+              only: /^v.*/
