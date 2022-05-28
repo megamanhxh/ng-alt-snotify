@@ -11,6 +11,9 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - run:
+          command: npm install -g webdriver-manager
+          name: Install WebDriver Manager
       - node/install-packages
       - run:
           command: npm run prettier:check
