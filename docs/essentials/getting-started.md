@@ -1,12 +1,11 @@
-# ng-snotify
+# ng-alt-snotify
 
-[![Build Status](https://travis-ci.org/artemsky/ng-snotify.svg?branch=master)](https://travis-ci.org/artemsky/ng-snotify)
-[![NPM Version](https://img.shields.io/npm/v/ng-snotify.svg)](https://www.npmjs.com/package/ng-snotify)
-[![NPM Downloads](https://img.shields.io/npm/dt/ng-snotify.svg)](https://www.npmjs.com/package/ng-snotify)
-[![Dev dependencies status list](https://david-dm.org/artemsky/ng-snotify/dev-status.svg)](https://david-dm.org/artemsky/ng-snotify?type=dev)
+[![Build Status](https://circleci.com/gh/megamanhxh/ng-alt-snotify/tree/master.svg?style=svg)](https://app.circleci.com/pipelines/github/megamanhxh/ng-alt-snotify)
+[![NPM Version](https://img.shields.io/npm/v/ng-alt-snotify.svg)](https://www.npmjs.com/package/ng-alt-snotify)
+[![NPM Downloads](https://img.shields.io/npm/dt/ng-alt-snotify.svg)](https://www.npmjs.com/package/ng-alt-snotify)
 
 ## Example
-https://artemsky.github.io/ng-snotify/
+https://artemsky.github.io/ng-alt-snotify/
 
 
 ## Features
@@ -26,18 +25,18 @@ https://artemsky.github.io/ng-snotify/
 
 ## Installation
 
-###### NPM 5
-`npm install ng-snotify`
+###### NPM 8
+`npm install ng-alt-snotify`
 
 ###### yarn
-`yarn add ng-snotify`
+`yarn add ng-alt-snotify`
 
 ## Documentation and Examples
 
-Documentation - [here](https://artemsky.github.io/ng-snotify/documentation)  
-Example application source - [here](https://github.com/artemsky/ng-snotify/tree/master/example/app)  
-Auto-Documentation (Compodoc) - [here](https://artemsky.github.io/ng-snotify/compodoc/)  
-Change Log - [here](https://github.com/artemsky/ng-snotify/blob/master/CHANGELOG.md)
+Documentation - [here](https://megamanhxh.github.io/ng-alt-snotify/documentation)  
+Example application source - [here](https://github.com/megamanhxh/ng-alt-snotify/tree/master/example/app)  
+Auto-Documentation (Compodoc) - [here](https://megamanhxh.github.io/ng-alt-snotify/compodoc/)  
+Change Log - [here](https://github.com/megamanhxh/ng-alt-snotify/blob/master/CHANGELOG.md)
 
 ## License
 

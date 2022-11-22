@@ -1,7 +1,7 @@
 {
   "name": "ng-alt-snotify",
   "description": "Angular 2+ alternative notifications center",
-  "version": "13.0.3",
+  "version": "14.0.0",
   "homepage": "https://megamanhxh.github.io/ng-alt-snotify",
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "angular 11",
     "angular 12",
     "angular 13",
+    "angular 14",
     "ng",
     "ng2",
     "ng4",
@@ -42,6 +43,7 @@
     "ng11",
     "ng12",
     "ng13",
+    "ng14",
     "Angular2",
     "Angular4",
     "Angular5",
@@ -53,6 +55,7 @@
     "Angular11",
     "Angular12",
     "Angular13",
+    "Angular14",
     "2",
     "4",
     "5",
@@ -64,6 +67,7 @@
     "11",
     "12",
     "13",
+    "14",
     "Library",
     "Notifications",
     "Notification",
@@ -88,6 +92,20 @@
     "ng11-snotify",
     "ng12-snotify",
     "ng13-snotify",
+    "ng14-snotify",
+    "ng-alt-snotify",
+    "ng2-alt-snotify",
+    "ng4-alt-snotify",
+    "ng5-alt-snotify",
+    "ng6-alt-snotify",
+    "ng7-alt-snotify",
+    "ng8-alt-snotify",
+    "ng9-alt-snotify",
+    "ng10-alt-snotify",
+    "ng11-alt-snotify",
+    "ng12-alt-snotify",
+    "ng13-alt-snotify",
+    "ng14-alt-snotify",
     "angular2 notifications",
     "angular4 notifications",
     "angular5 notifications",
@@ -99,6 +117,8 @@
     "angular11 notifications",
     "angular12 notifications",
     "angular13 notifications",
+    "angular14 notifications",
+    "alt-snotify",
     "toaster"
   ],
   "license": "MIT",
@@ -106,8 +126,8 @@
     "url": "https://github.com/megamanhxh/ng-alt-snotify/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^13.3.0",
-    "@angular/core": "^13.3.0"
+    "@angular/common": "^14.0.1",
+    "@angular/core": "^14.0.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"

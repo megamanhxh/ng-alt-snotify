@@ -4,7 +4,7 @@
 > `SnotifyGlobalConfig` - changes toast dock configuration.
 
 ## Setting default configuration
-> Default configuration looks like this - [toastDefaults](https://github.com/artemsky/ng-snotify/blob/master/src/snotify/toastDefaults.ts)  
+> Default configuration looks like this - [toastDefaults](https://github.com/megamanhxh/ng-alt-snotify/blob/master/src/snotify/toastDefaults.ts)  
 > Of course you can use it like json, just omit imports, and replace `SnotifyStyle` & `SnotifyPosition` with string values.
 > Just be sure that you are follow [SnotifyDefaults](interfaces.md#snotifydefaults) interface.  
 > You should initialize `ng-snotify` with default configuration object.   
@@ -12,7 +12,7 @@
 
 ###### Example
 ```typescript
-import {SnotifyModule, SnotifyService, ToastDefaults} from 'ng-snotify';
+import {SnotifyModule, SnotifyService, ToastDefaults} from 'ng-alt-snotify';
 @NgModule({
   declarations: [
     AppComponent

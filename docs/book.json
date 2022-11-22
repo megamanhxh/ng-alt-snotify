@@ -1,14 +1,14 @@
 {
-  "title": "ng-snotify",
+  "title": "ng-alt-snotify",
   "gitbook": ">3.0.0",
   "plugins": ["edit-link", "theme-vuejs", "-fontsettings", "github"],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/artemsky/ng-snotify/tree/develop/documentation",
+      "base": "https://github.com/megamanhxh/ng-alt-snotify/tree/develop/documentation",
       "label": "Edit This Page"
     },
     "github": {
-      "url": "https://github.com/artemsky/ng-snotify/"
+      "url": "https://github.com/megamanhxh/ng-alt-snotify/"
     }
   },
   "links": {

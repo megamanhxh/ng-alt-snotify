@@ -7,7 +7,7 @@
 
 ```typescript
 // Import your library
-import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
+import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-alt-snotify';
 
 @NgModule({
   imports: [
