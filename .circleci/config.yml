@@ -26,7 +26,7 @@ jobs:
             fonts-liberation libappindicator1 libnss3 lsb-release libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev \
             libxss-dev xdg-utils wget
       - run:
-          command: sudo chmod u+x -R 775 /usr/local/lib/node_modules/
+          command: sudo chmod 775 -R /usr/local/lib/node_modules/
           name: Reset NPM Global Permisssion
       - run:
           command: npm install -g webdriver-manager compodoc gitbook-cli
