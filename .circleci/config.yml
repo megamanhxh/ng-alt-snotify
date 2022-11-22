@@ -29,7 +29,7 @@ jobs:
           command: sudo chmod 775 -R /usr/local/lib/node_modules/
           name: Reset NPM Global Permisssion
       - run:
-          command: npm install -g webdriver-manager compodoc gitbook-cli
+          command: npm install -g webdriver-manager compodoc gitbook-cli --force
           name: Install NPM Global Packages
       - node/install-packages
       - run:
