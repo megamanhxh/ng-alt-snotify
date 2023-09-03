@@ -26,7 +26,7 @@ https://megamanhxh.github.io/ng-alt-snotify/
 
 ###### Looking for an Vue.js 2 version? [Here](https://github.com/artemsky/vue-snotify/)
 
-![Snotify Gif](https://thumbs.gfycat.com/SoftGranularDalmatian-size_restricted.gif)
+![Snotify Gif](https://github.com/megamanhxh/ng-alt-snotify/blob/master/src/assets/ng-snotify.gif?raw=true)
 
 ## Installation
 
