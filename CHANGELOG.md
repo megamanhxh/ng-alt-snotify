@@ -1,5 +1,15 @@
 ## Change Log
 
+### v15.9.2
+- update to Angular ^15.0.0
+- bump package to match angular
+
+### v14.2.12
+- bump package to match angular
+
+### v14.0.0
+- update to Angular ^14.0.0
+- bump package to match angular
 
 ### v13.0.2
 - fix missing style
