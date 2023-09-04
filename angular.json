@@ -153,7 +153,6 @@
       }
     }
   },
-  "defaultProject": "ng-alt-snotify-example",
   "cli": {
     "analytics": "6e145ab7-8a7f-4a71-87f4-0113a200f190"
   }
